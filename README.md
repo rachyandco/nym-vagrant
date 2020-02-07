@@ -12,6 +12,8 @@ Then connect to the vagrant `vagrant ssh` and run the mixnode with the following
 
 To check if your mixnode is properly announced, look for your public IP or your mixnode public key at https://dashboard.nymtech.net/
 
+If Rust install fails, you can run the vagrant again forcing the installing scripts to run again with the command `vagrant up --provision`
+
 ## Networking
 
 Nym mixnode requires port 1789 to be reachable. The Vagrantfile is exposing port 1789 within the host machine. Please make sure the host machine port 1789 is reachable with the host public IP address.
@@ -30,7 +32,7 @@ You can replace `up` with `reload` if your vagrant is already `up`.
 
 ## Unstable version
 
-You can install the latest unstable version from Nyym `develop` branch by running  `vagrant up --provision-with update`
+You can install the latest unstable version from Nym `develop` branch by running  `vagrant up --provision-with unstable`
 
 You can replace `up` with `reload` if your vagrant is already `up`.
 
@@ -40,6 +42,6 @@ You can stop your vagrant with `vagrant halt`. You can destroy your vagrant with
 
 ## About NYM
 
-https://nymtech.net/
-https://github.com/nymtech/nym
-https://nymtech.net/docs/mixnet/installation/
+- https://nymtech.net/
+- https://github.com/nymtech/nym
+- https://nymtech.net/docs/mixnet/installation/
